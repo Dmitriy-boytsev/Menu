@@ -1,0 +1,14 @@
+{% load menu_tags %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{{ page_name|capfirst }}</title>
+</head>
+<body>
+    <h1>{{ page_name|capfirst }} Page</h1>
+    {% draw_menu 'main_menu' %}
+    <p>This is the {{ page_name }} page.</p>
+</body>
+</html>
